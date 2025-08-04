@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin "daisyui";
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+    --color-darkgreen-500: #254336;
+    --color-sage-500: #6B8A7A;
+    --color-sage-600:#516b56;
+    --color-darkbeige-500: #B7B597;
+    --color-beige-500: #DAD3BE;
+
+  }
