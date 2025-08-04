@@ -4,7 +4,6 @@
 	import { quadIn } from 'svelte/easing';
 	import { interpolateRound } from 'd3-interpolate';
 	import logo from './assets/bg.png';
-	import Icon from '@iconify/svelte';
 
 	const greeting = "Hello World I'm Ishta!";
 	const duration = 3000;
