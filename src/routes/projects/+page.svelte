@@ -44,7 +44,7 @@
 
 <div class="bg-beige-500 min-h-screen">
   <!-- Header Section -->
-  <div class="relative isolate px-6 pt-14 lg:px-8">
+  <div class="relative isolate px-6 lg:px-8">
     <div class="mx-auto max-w-7xl py-24 sm:py-32">
       <div class="text-center">
         <h1 class="text-4xl font-bold tracking-tight text-darkgreen-500 sm:text-6xl">
