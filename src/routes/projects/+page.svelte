@@ -1,4 +1,7 @@
 <script lang="ts">
+  import SEO from '$lib/components/SEO.svelte';
+  import { generatePageSEO } from '$lib/seo';
+  
   // Define the Project type
   interface Project {
     id: number;
@@ -10,6 +13,14 @@
     live: string;
     category: string;
   }
+  
+  // SEO configuration for projects page
+  const projectsSEO = generatePageSEO({
+    title: "Projects - Ishta's Portfolio",
+    description: "Explore my projects in mobile development, machine learning, and full stack development. View my work with Python, Java, Flutter, and SvelteKit.",
+    keywords: ["Projects", "Portfolio", "Mobile Development", "Machine Learning", "Full Stack Development", "Python", "Java", "Flutter", "SvelteKit"],
+    type: "website"
+  });
 
   // Project data - add your actual projects here
   const projects: Project[] = [
@@ -37,10 +48,7 @@
     : projects.filter(project => project.category === selectedCategory);
 </script>
 
-<svelte:head>
-  <title>Projects - Ishta's Portfolio</title>
-  <meta name="description" content="Explore my projects in mobile development, machine learning, and full stack development." />
-</svelte:head>
+<SEO config={projectsSEO} />
 
 <div class="bg-beige-500 min-h-screen">
   <!-- Header Section -->

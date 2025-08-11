@@ -1,0 +1,31 @@
+{
+	"name": "Ishta's Portfolio",
+	"short_name": "Ishta",
+	"description": "CS Student & Aspiring Software Engineer Portfolio",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#4A7C59",
+	"theme_color": "#4A7C59",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "/favicon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"categories": ["education", "technology", "portfolio"],
+	"lang": "en",
+	"dir": "ltr"
+}

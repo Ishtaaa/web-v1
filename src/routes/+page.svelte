@@ -5,6 +5,8 @@
 	import { interpolateRound } from 'd3-interpolate';
 	import { page } from '$app/stores';
 	import logo from './assets/bg.png';
+	import SEO from '$lib/components/SEO.svelte';
+	import { defaultSEO } from '$lib/seo';
 
 	const greeting = "Hello World I'm Ishta!";
 	const duration = 3000;
@@ -26,6 +28,8 @@
 		}
 	});
 </script>
+
+<SEO config={defaultSEO} />
 
 <div class="bg-image-container" style="background-image: url({logo})">
 	<div class="relative isolate px-6 lg:px-8">
