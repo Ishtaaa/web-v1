@@ -4,6 +4,7 @@
 	
 	$: currentPath = $page.url.pathname;
 	$: isProjectsPage = currentPath === '/projects';
+	$: isGamesPage = currentPath === '/games';
 
 	function redirectToHomepage() {
 		if (currentPath !== '/') {
@@ -92,6 +93,14 @@
 							Contact Me
 						</a>
 					</li>
+					<li>
+						<a
+							href="/games"
+							class="text-beige-500 hover:text-darkbeige-500 hover:bg-beige-500 {isGamesPage ? 'bg-beige-500 text-darkbeige-500' : ''}"
+						>
+							Games
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -128,6 +137,14 @@
 					>
 						Contact Me
 					</button>
+				</li>
+				<li>
+					<a
+						href="/games"
+						class="text-beige-500 hover:text-darkbeige-500 hover:bg-beige-500 {isGamesPage ? 'bg-sage-500 text-beige-500' : ''}"
+					>
+						Games
+					</a>
 				</li>
 			</ul>
 		</div>
