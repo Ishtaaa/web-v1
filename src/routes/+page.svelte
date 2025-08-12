@@ -324,18 +324,23 @@
 	<div class="py-8 lg:py-16 px-4 w-full max-w-4xl bg-darkbeige-500 rounded-2xl shadow-2xl">
 		<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-pretty text-sage-500">Contact Me</h2>
 		<p class="mb-8 lg:mb-16 font-light text-center text-sage-600 sm:text-xl"></p>
-		<form action="#" class="space-y-8">
+		<form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+			<input type="hidden" name="access_key" value="d4a1becd-fb9f-4813-9140-1413468397be">
+			<div>
+				<label for="full_name" class="block mb-2 text-sm font-medium text-pretty text-darkgreen-500">Your Name</label>
+				<input type="name" id="name" name="name" class="shadow-sm bg-beige-500 border border-sage-500 text-darkgreen-500 text-sm rounded-lg focus:ring-darkgreen-500 focus:border-darkgreen-500 block w-full p-2.5 placeholder-sage-600" placeholder="Add full name here" required>
+			</div>
 			<div>
 				<label for="email" class="block mb-2 text-sm font-medium text-pretty text-darkgreen-500">Your email</label>
-				<input type="email" id="email" class="shadow-sm bg-beige-500 border border-sage-500 text-darkgreen-500 text-sm rounded-lg focus:ring-darkgreen-500 focus:border-darkgreen-500 block w-full p-2.5 placeholder-sage-600" placeholder="name@example.com" required>
+				<input type="email" id="email" name="email" class="shadow-sm bg-beige-500 border border-sage-500 text-darkgreen-500 text-sm rounded-lg focus:ring-darkgreen-500 focus:border-darkgreen-500 block w-full p-2.5 placeholder-sage-600" placeholder="name@example.com" required>
 			</div>
 			<div>
 				<label for="subject" class="block mb-2 text-sm font-medium text-pretty text-darkgreen-500">Subject</label>
-				<input type="text" id="subject" class="block p-3 w-full text-sm text-darkgreen-500 bg-beige-500 rounded-lg border border-sage-500 shadow-sm focus:ring-darkgreen-500 focus:border-darkgreen-500 placeholder-sage-600" placeholder="Let us know how we can help you" required>
+				<input type="text" id="subject" name="subject" class="block p-3 w-full text-sm text-darkgreen-500 bg-beige-500 rounded-lg border border-sage-500 shadow-sm focus:ring-darkgreen-500 focus:border-darkgreen-500 placeholder-sage-600" placeholder="Let us know how we can help you" required>
 			</div>
 			<div class="sm:col-span-2">
 				<label for="message" class="block mb-2 text-sm font-medium text-pretty text-darkgreen-500">Your message</label>
-				<textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-darkgreen-500 bg-beige-500 rounded-lg shadow-sm border border-sage-500 focus:ring-darkgreen-500 focus:border-darkgreen-500 placeholder-sage-600" placeholder="Leave a comment..."></textarea>
+				<textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-darkgreen-500 bg-beige-500 rounded-lg shadow-sm border border-sage-500 focus:ring-darkgreen-500 focus:border-darkgreen-500 placeholder-sage-600" placeholder="Leave a comment..."></textarea>
 			</div>
 			<button type="submit" class="py-3 px-5 text-sm font-medium text-center text-beige-500 rounded-lg bg-darkgreen-500 sm:w-fit hover:bg-sage-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-sage-500 transition-colors duration-200">Send message</button>
 		</form>
