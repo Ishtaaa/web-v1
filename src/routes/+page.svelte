@@ -59,7 +59,7 @@
 			</div>
 		</div>
 		<div class="flex justify-center items-center mt-8">
-			<a class="flex items-center gap-2 bg-darkgreen-500 text-beige-500 px-6 py-3 rounded-lg hover:bg-sage-500 hover:text-white p-10 transition-all duration-300" href="https://www.github.com/Ishtaaa" target="_blank" rel="noopener noreferrer"> 
+			<a class="flex items-center gap-2 bg-darkgreen-500 text-beige-500 px-6 py-3 rounded-lg hover:bg-sage-500 hover:text-white p-10 transition-all duration-300 hover:animate-bounce" href="https://www.github.com/Ishtaaa" target="_blank" rel="noopener noreferrer"> 
 				<span class="font-semibold">GitHub</span>
 				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
 					<mask id="lineMdGithubLoop0" width="24" height="24" x="0" y="0">

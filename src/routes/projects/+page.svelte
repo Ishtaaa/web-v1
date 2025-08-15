@@ -36,7 +36,27 @@
     //   live: "https://live-demo-url.com",
     //   category: "Category"
     // }
-  ];
+    {
+		id: 1,
+		title: "Spotify Data Analysis",
+		description: "A simple data analysis tool that processes your Spotify listening history to uncover trends.",
+		technologies: ["Python", "Pandas", "Matplotlib"],
+		image: "/images/mobile-app.jpg",
+		github: " https://github.com/Ishtaaa/spotify-data",
+		live: '',
+		category: 'Data Science'
+	},
+  {
+		id: 2,
+		title: "Pomodoro Timer",
+		description: "A simple pomodoro timer app in Flutter",
+		technologies: ["Flutter", "Dart"],
+		image: "/images/mobile-app.jpg",
+		github: " https://github.com/Ishtaaa/pomodoro_timer",
+		live: '',
+		category: 'Mobile Development'
+	}
+      ];
 
   // Filter state
   let selectedCategory = "All";
@@ -81,7 +101,7 @@
       <!-- Projects Grid -->
       <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {#each filteredProjects as project}
-          <div class="group relative bg-darkbeige-500 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <div class="group relative bg-darkbeige-500 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105  ">
             <!-- Project Image -->
             <div class="aspect-w-16 aspect-h-9 bg-gray-200">
               <img 
@@ -127,15 +147,7 @@
                   </svg>
                   GitHub
                 </a>
-                <a 
-                  href={project.live} 
-                  class="flex-1 inline-flex justify-center items-center px-3 py-2 text-sm font-medium text-white bg-darkgreen-500 rounded-md hover:bg-sage-500 transition-colors duration-200"
-                >
-                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                  Live Demo
-                </a>
+                
               </div>
             </div>
           </div>

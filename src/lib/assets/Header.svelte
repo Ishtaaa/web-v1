@@ -98,7 +98,7 @@
 							href="/games"
 							class="text-beige-500 hover:text-darkbeige-500 hover:bg-beige-500 {isGamesPage ? 'bg-beige-500 text-darkbeige-500' : ''}"
 						>
-							Games
+							Minigames
 						</a>
 					</li>
 				</ul>
